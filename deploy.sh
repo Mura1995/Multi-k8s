@@ -10,6 +10,6 @@ docker push mura1995/multi-server:$SHA
 docker push mura1995/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployments server=mura1995/multi-server:$SHA
-kubectl set image deployments/client-deployments client=mura1995/multi-client:$SHA
-kubectl set image deployments/worker-deployments worker=mura1995/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=mura1995/multi-server:$SHA
+kubectl set image deployments/client-deployment client=mura1995/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=mura1995/multi-worker:$SHA
