@@ -1,5 +1,5 @@
 docker build -t mura1995/multi-client:latest -t mura1995/multi-client:$SHA -f ./client/Dockerfile ./client
-docekr build -t mura1995/multi-server:latest -t mura1995/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t mura1995/multi-server:latest -t mura1995/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t mura1995/multi-worker:latest -t mura1995/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push mura1995/multi-client:latest
 docker push mura1995/multi-server:latest
